@@ -35,5 +35,7 @@ basic.forever(function () {
         0,
         200
         ))
+    } else if (joystickbit.getButton(joystickbit.JoystickBitPin.P12)) {
+        radio.sendValue("beep", 1)
     }
 })
